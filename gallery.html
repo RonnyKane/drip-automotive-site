@@ -49,10 +49,6 @@
     <!-- Filter Bar -->
     <section class="section">
       <div class="container">
-        <div class="notice" style="margin-bottom:2rem;">
-          <strong>📸 Note for Byron:</strong> Replace the placeholder gallery items below with real before/after photos from the shop. Add <code>data-category="collision"</code>, <code>"paint"</code>, <code>"dent"</code>, or <code>"restoration"</code> to each <code>.gallery-item</code> for the filter to work.
-        </div>
-
         <!-- Filter Buttons -->
         <div class="btn-group mb-2" role="group" aria-label="Filter gallery by category">
           <button class="btn btn-primary btn-sm" data-filter="all">All Work</button>
@@ -64,197 +60,86 @@
 
         <!-- Full Gallery Grid -->
         <div class="gallery-grid">
-
-          <!-- Collision Repair -->
-          <div class="gallery-item" data-category="collision">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#2a1010,#3a1a1a);" aria-label="Before: Honda Accord front-end collision damage — crushed hood, broken headlights, radiator support damage">
-              🔧
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Collision Repair</span>
-              <span class="go-title">Honda Accord — Front End</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="collision">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#0a1f2a,#0d2d3a);" aria-label="After: Honda Accord fully restored front end — new hood, headlights, and fresh paint match">
-              ✅
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Collision Repair</span>
-              <span class="go-title">Honda Accord — Restored</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="collision">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#2a1515,#3a2020);" aria-label="Before: Toyota Camry rear-end collision — crumpled trunk lid, broken tail lights, bumper damage">
-              🚘
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Collision Repair</span>
-              <span class="go-title">Toyota Camry — Rear End</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="collision">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#081a24,#0a2535);" aria-label="After: Toyota Camry rear end restored to factory condition — new trunk, tail lights, perfect paint match">
-              ✨
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Collision Repair</span>
-              <span class="go-title">Toyota Camry — Restored</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="collision">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#281010,#381a1a);" aria-label="Before: Ford F-150 side impact damage — dented door, rocker panel, quarter panel">
-              🚛
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Collision Repair</span>
-              <span class="go-title">Ford F-150 — Side Impact</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="collision">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#081c28,#0c2838);" aria-label="After: Ford F-150 side panels fully restored and repainted to factory match">
-              🏆
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Collision Repair</span>
-              <span class="go-title">Ford F-150 — Restored</span>
-            </div>
-          </div>
-
-          <!-- Custom Paint -->
-          <div class="gallery-item" data-category="paint">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a1005,#2a1a08);" aria-label="Before: Chevrolet Silverado with faded, oxidized factory white paint">
-              🎨
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Custom Paint</span>
-              <span class="go-title">Chevy Silverado — Faded Paint</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="paint">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#00142a,#001f3f);" aria-label="After: Chevrolet Silverado with deep metallic blue custom respray — mirror finish">
-              💎
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Custom Paint</span>
-              <span class="go-title">Chevy Silverado — Custom Metallic Blue</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="paint">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a1500,#282000);" aria-label="Before: Dodge Charger with peeling black paint and clear coat failure">
-              🖌️
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Custom Paint</span>
-              <span class="go-title">Dodge Charger — Peeling Clear Coat</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="paint">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a0028,#280040);" aria-label="After: Dodge Charger with deep purple pearl custom finish and black accents">
-              🌟
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">Custom Paint</span>
-              <span class="go-title">Dodge Charger — Purple Pearl Custom</span>
-            </div>
-          </div>
-
-          <!-- Dent & PDR -->
-          <div class="gallery-item" data-category="dent">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#221010,#2e1515);" aria-label="Before: vehicle hood covered in dozens of hail dents from a Central Florida storm">
-              ⛈️
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">PDR — Hail Damage</span>
-              <span class="go-title">Hail Damage — SUV Hood</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="dent">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#081e28,#0d2a38);" aria-label="After: same vehicle hood completely smooth after paintless dent repair — original paint preserved">
-              ☀️
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">PDR — Hail Damage</span>
-              <span class="go-title">Hail Damage — Restored via PDR</span>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="dent">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#281a10,#382510);" aria-label="Before: car door with deep parking lot ding — paint intact but metal pushed in">
-              🚪
-            </div>
-            <span class="gallery-before-tag">Before</span>
-            <div class="gallery-overlay">
-              <span class="go-label">PDR — Door Ding</span>
-              <span class="go-title">Door Ding — Sedan</span>
-            </div>
-          </div>
-          <div class="gallery-item" data-category="dent">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#091c28,#0c2535);" aria-label="After: car door returned to perfectly smooth surface via paintless dent repair — no repainting needed">
-              ✅
-            </div>
-            <span class="gallery-after-tag">After</span>
-            <div class="gallery-overlay">
-              <span class="go-label">PDR — Door Ding</span>
-              <span class="go-title">Door Ding — Removed via PDR</span>
-            </div>
-          </div>
-
-          <!-- Restoration -->
+        <!-- Geo Tracker / Suzuki Sidekick — Full Paint Restoration -->
           <div class="gallery-item" data-category="restoration">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a1000,#2a1800);" aria-label="Before: 1967 Ford Mustang fastback — faded original paint, surface rust, dented quarters">
-              🏎️
-            </div>
-            <span class="gallery-before-tag">Before</span>
+            <img src="images/gallery/tracker-front.jpg" alt="Geo Tracker full paint restoration - front view at The Drip Auto Body Leesburg FL" loading="lazy">
             <div class="gallery-overlay">
-              <span class="go-label">Classic Restoration</span>
-              <span class="go-title">1967 Mustang Fastback</span>
+              <span class="go-label">Restoration</span>
+              <span class="go-title">Geo Tracker — Full Paint Job (Front)</span>
             </div>
           </div>
           <div class="gallery-item" data-category="restoration">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#001428,#001e3a);" aria-label="After: 1967 Ford Mustang fastback fully restored — show-quality Highland Green paint, perfect bodywork">
-              🌟
-            </div>
-            <span class="gallery-after-tag">After</span>
+            <img src="images/gallery/tracker-angle.jpg" alt="Geo Tracker restored paint - angle view showing fresh red paint at The Drip Leesburg" loading="lazy">
             <div class="gallery-overlay">
-              <span class="go-label">Classic Restoration</span>
-              <span class="go-title">1967 Mustang — Award Winner</span>
+              <span class="go-label">Restoration</span>
+              <span class="go-title">Geo Tracker — Complete Respray</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="restoration">
+            <img src="images/gallery/tracker-rear.jpg" alt="Geo Tracker convertible restoration - rear quarter view with soft top at The Drip Auto Body" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="go-label">Restoration</span>
+              <span class="go-title">Geo Tracker — Rear Quarter</span>
             </div>
           </div>
 
-          <div class="gallery-item" data-category="restoration">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1e1000,#281800);" aria-label="Before: 1969 Chevelle SS — heavily oxidized paint, body filler cracking, needs full restoration">
-              🔑
-            </div>
-            <span class="gallery-before-tag">Before</span>
+          <!-- Chevy Silverado — Collision Repair & Full Paint -->
+          <div class="gallery-item" data-category="collision">
+            <img src="images/gallery/silverado-flatbed.jpg" alt="Chevy Silverado arriving on flatbed for collision repair at The Drip Auto Body Leesburg FL" loading="lazy">
+            <span class="gallery-before-tag">Arrival</span>
             <div class="gallery-overlay">
-              <span class="go-label">Classic Restoration</span>
-              <span class="go-title">1969 Chevelle SS</span>
+              <span class="go-label">Collision Repair</span>
+              <span class="go-title">Chevy Silverado — Flatbed Arrival</span>
             </div>
           </div>
-          <div class="gallery-item" data-category="restoration">
-            <div class="gallery-placeholder" style="background:linear-gradient(135deg,#0a1a00,#0e2500);" aria-label="After: 1969 Chevelle SS restored to show quality — correct Fathom Green paint, chrome trim, show-floor finish">
-              🏆
-            </div>
-            <span class="gallery-after-tag">After</span>
+          <div class="gallery-item" data-category="collision">
+            <img src="images/gallery/silverado-progress.jpg" alt="Chevy Silverado in progress - primer and fresh maroon paint being applied at The Drip" loading="lazy">
+            <span class="gallery-before-tag">In Progress</span>
             <div class="gallery-overlay">
-              <span class="go-label">Classic Restoration</span>
-              <span class="go-title">1969 Chevelle SS — Restored</span>
+              <span class="go-label">Collision Repair</span>
+              <span class="go-title">Chevy Silverado — Paint In Progress</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="collision">
+            <img src="images/gallery/silverado-progress2.jpg" alt="Chevy Silverado technician working on door panels - primer to paint process at The Drip Auto Body" loading="lazy">
+            <span class="gallery-before-tag">In Progress</span>
+            <div class="gallery-overlay">
+              <span class="go-label">Collision Repair</span>
+              <span class="go-title">Chevy Silverado — Tech at Work</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="collision">
+            <img src="images/gallery/silverado-rear.jpg" alt="Chevy Silverado freshly painted rear bed and quarter panels at The Drip Leesburg FL" loading="lazy">
+            <span class="gallery-after-tag">Result</span>
+            <div class="gallery-overlay">
+              <span class="go-label">Collision Repair</span>
+              <span class="go-title">Chevy Silverado — Fresh Paint</span>
+            </div>
+          </div>
+
+          <!-- Toyota Highlander — Paint Repair & Blending -->
+          <div class="gallery-item" data-category="paint">
+            <img src="images/gallery/highlander-before.jpg" alt="Toyota Highlander in shop for paint repair at The Drip Auto Body Leesburg FL" loading="lazy">
+            <span class="gallery-before-tag">Before</span>
+            <div class="gallery-overlay">
+              <span class="go-label">Auto Painting</span>
+              <span class="go-title">Toyota Highlander — Arrived for Paint</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="paint">
+            <img src="images/gallery/highlander-progress.jpg" alt="Toyota Highlander paint blending in progress - masking tape and primer visible at The Drip" loading="lazy">
+            <span class="gallery-before-tag">In Progress</span>
+            <div class="gallery-overlay">
+              <span class="go-label">Auto Painting</span>
+              <span class="go-title">Toyota Highlander — Blending Process</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="paint">
+            <img src="images/gallery/highlander-blending.jpg" alt="Toyota Highlander rear quarter panel paint blend - seamless color match at The Drip Auto Body" loading="lazy">
+            <span class="gallery-after-tag">Result</span>
+            <div class="gallery-overlay">
+              <span class="go-label">Auto Painting</span>
+              <span class="go-title">Toyota Highlander — Seamless Blend</span>
             </div>
           </div>
 
