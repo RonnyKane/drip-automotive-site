@@ -541,6 +541,13 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   overflow: hidden;
 }
+.ba-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
 .ba-img.before {
   background: linear-gradient(135deg, #2a1a1a, #3a2020);
   color: var(--text-dim);
