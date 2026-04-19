@@ -112,25 +112,27 @@
   }
 
   /* ── Contact Form (front-end only, shows confirmation) ─── */
+  // Show success message if redirected back after form submission
+  if (window.location.search.includes('submitted=true')) {
+    const msg = document.getElementById('form-success');
+    const contactForm = document.getElementById('contact-form');
+    if (msg) {
+      msg.style.display = 'block';
+      msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    if (contactForm) contactForm.style.display = 'none';
+  }
+
+  // Show sending state on form submit
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+    contactForm.addEventListener('submit', function () {
       const btn = contactForm.querySelector('button[type="submit"]');
-      const orig = btn ? btn.textContent : '';
       if (btn) {
         btn.disabled = true;
         btn.textContent = 'Sending…';
       }
-      // Simulate a short delay then show success message
-      setTimeout(function () {
-        const msg = document.getElementById('form-success');
-        if (msg) {
-          msg.style.display = 'block';
-          msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        contactForm.style.display = 'none';
-      }, 800);
+      // Form submits natively to Formsubmit.co
     });
   }
 

@@ -131,7 +131,12 @@
               <p>We'll be in touch within one business day. You can also call us directly at <a href="tel:+13528051818">(352) 805-1818</a>.</p>
             </div>
 
-            <form id="contact-form" novalidate>
+            <form id="contact-form" action="https://formsubmit.co/thedrippaint@gmail.com" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New Estimate Request — The Drip Auto Body">
+              <input type="hidden" name="_captcha" value="true">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://dripautomotive.com/contact.html?submitted=true">
+              <input type="text" name="_honey" style="display:none">
               <div class="form-grid">
                 <div class="form-group">
                   <label for="fname">First Name *</label>
