@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.thedripauto.com/sitemap.xml
+Sitemap: https://www.dripautomotive.com/sitemap.xml
