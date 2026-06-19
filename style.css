@@ -333,7 +333,12 @@ main, .hero, section { position: relative; z-index: 1; }
   pointer-events: none;
   z-index: 0;
   background: url('images/paint-drips-dark.jpg') top center / cover no-repeat;
-  opacity: 0.4;
+  opacity: 0.7;
+}
+
+/* Make sections semi-transparent so drips show through */
+.section, .section-alt, .hero {
+  background-color: rgba(26,26,30,0.85) !important;
 }
 
 .hero-bg {
