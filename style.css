@@ -329,40 +329,11 @@ main, .hero, section { position: relative; z-index: 1; }
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  height: 500px;
   pointer-events: none;
   z-index: 2;
   overflow: hidden;
-}
-.paint-drips::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background:
-    /* Red drips - thick and visible */
-    radial-gradient(ellipse 8px 280px at 3% 0%, rgba(212,20,28,0.55) 0%, rgba(212,20,28,0.08) 60%, transparent 100%),
-    radial-gradient(ellipse 6px 180px at 8% 0%, rgba(212,20,28,0.45) 0%, rgba(212,20,28,0.06) 60%, transparent 100%),
-    radial-gradient(ellipse 10px 350px at 15% 0%, rgba(212,20,28,0.50) 0%, rgba(212,20,28,0.05) 60%, transparent 100%),
-    /* Gold drips */
-    radial-gradient(ellipse 7px 250px at 25% 0%, rgba(232,184,16,0.50) 0%, rgba(232,184,16,0.06) 60%, transparent 100%),
-    radial-gradient(ellipse 5px 190px at 30% 0%, rgba(232,184,16,0.40) 0%, rgba(232,184,16,0.05) 60%, transparent 100%),
-    radial-gradient(ellipse 9px 300px at 37% 0%, rgba(232,184,16,0.45) 0%, rgba(232,184,16,0.05) 60%, transparent 100%),
-    /* Pink drips */
-    radial-gradient(ellipse 7px 320px at 45% 0%, rgba(224,0,128,0.45) 0%, rgba(224,0,128,0.05) 60%, transparent 100%),
-    radial-gradient(ellipse 6px 200px at 50% 0%, rgba(224,0,128,0.40) 0%, rgba(224,0,128,0.05) 60%, transparent 100%),
-    /* Orange drips */
-    radial-gradient(ellipse 8px 270px at 58% 0%, rgba(240,144,32,0.50) 0%, rgba(240,144,32,0.06) 60%, transparent 100%),
-    radial-gradient(ellipse 6px 220px at 65% 0%, rgba(240,144,32,0.40) 0%, rgba(240,144,32,0.05) 60%, transparent 100%),
-    radial-gradient(ellipse 10px 310px at 70% 0%, rgba(240,144,32,0.45) 0%, rgba(240,144,32,0.05) 60%, transparent 100%),
-    /* Blue drips */
-    radial-gradient(ellipse 7px 260px at 78% 0%, rgba(0,160,208,0.45) 0%, rgba(0,160,208,0.05) 60%, transparent 100%),
-    radial-gradient(ellipse 5px 180px at 83% 0%, rgba(0,160,208,0.35) 0%, rgba(0,160,208,0.04) 60%, transparent 100%),
-    /* More red drips on right side */
-    radial-gradient(ellipse 8px 290px at 90% 0%, rgba(212,20,28,0.50) 0%, rgba(212,20,28,0.06) 60%, transparent 100%),
-    radial-gradient(ellipse 6px 200px at 96% 0%, rgba(212,20,28,0.45) 0%, rgba(212,20,28,0.05) 60%, transparent 100%);
+  background: url('images/paint-drips.svg') top center / 100% auto no-repeat;
 }
 
 .hero-bg {
