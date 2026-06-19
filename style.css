@@ -323,8 +323,18 @@ main, .hero, section { position: relative; z-index: 1; }
   overflow: hidden;
   background: var(--bg);
 }
-/* ── Paint Drip Backdrop (removed — using clean design instead) ── */
-.paint-drips { display: none; }
+/* ── Paint Drip Backdrop ──────────────────────────────────── */
+.paint-drips {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: url('images/paint-drips-dark.jpg') top center / cover no-repeat;
+  opacity: 0.4;
+}
 
 .hero-bg {
   position: absolute;
