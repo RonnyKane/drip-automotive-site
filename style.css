@@ -340,8 +340,8 @@ main, .hero, section { position: relative; z-index: 1; }
   top: 0;
   left: 0;
   right: 0;
-  height: 60vh;
-  background: url('images/paint-drips-dark.jpg') top center / 100% auto no-repeat;
+  height: 80vh;
+  background: url('images/paint-drips-dark.jpg') top center / auto 100% no-repeat;
 }
 .paint-drips::after {
   content: '';
