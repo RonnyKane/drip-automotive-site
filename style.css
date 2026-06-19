@@ -333,22 +333,32 @@ main, .hero, section { position: relative; z-index: 1; }
   bottom: 0;
   pointer-events: none;
   z-index: 0;
-  background: url('images/paint-drips-dark.jpg') top center / 100% 100% no-repeat;
-  opacity: 1;
+}
+.paint-drips::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  background: url('images/paint-drips-dark.jpg') top center / 100% auto no-repeat;
+}
+.paint-drips::after {
+  content: '';
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  right: 0;
+  height: 40vh;
+  background: linear-gradient(to bottom, transparent 0%, #1a1a1e 100%);
 }
 
-/* Make ALL sections semi-transparent so drips show through */
-.section, .section-alt {
-  background-color: rgba(26,26,30,0.65) !important;
-}
+/* Hero is transparent to show drips, rest is solid */
 .hero {
   background-color: transparent !important;
 }
 .hero-bg {
-  opacity: 0.5;
-}
-footer, .site-footer {
-  background-color: rgba(26,26,30,0.75) !important;
+  opacity: 0.4;
 }
 
 .hero-bg {
