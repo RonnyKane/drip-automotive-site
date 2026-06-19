@@ -130,7 +130,7 @@
               <p>We'll be in touch within one business day. You can also call us directly at <a href="tel:+13528051818">(352) 805-1818</a>.</p>
             </div>
 
-            <form id="contact-form" action="https://formsubmit.co/thedrippaint@gmail.com" method="POST" novalidate>
+            <form id="contact-form" action="https://formsubmit.co/thedrippaint@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
               <input type="hidden" name="_subject" value="New Estimate Request — The Drip Auto Body">
               <input type="hidden" name="_captcha" value="true">
               <input type="hidden" name="_template" value="table">
@@ -176,6 +176,20 @@
                 <div class="form-group full">
                   <label for="message">Tell Us About Your Vehicle &amp; the Damage *</label>
                   <textarea id="message" name="message" placeholder="Describe the damage or project. The more detail you provide, the better estimate we can give you." required></textarea>
+                </div>
+                <div class="form-group full">
+                  <label for="photos">Upload Photos of Damage</label>
+                  <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.5rem;">Upload up to 5 photos so we can see the damage and give you a more accurate estimate.</p>
+                  <input type="file" id="photos" name="attachment" accept="image/*" multiple style="
+                    padding: 0.75rem;
+                    border: 2px dashed var(--border);
+                    border-radius: var(--radius);
+                    background: var(--surface);
+                    color: var(--text);
+                    width: 100%;
+                    cursor: pointer;
+                    transition: border-color 0.2s;
+                  " />
                 </div>
                 <div class="form-group full">
                   <label for="howheard">How Did You Hear About Us?</label>
