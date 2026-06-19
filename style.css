@@ -622,6 +622,13 @@ p:last-child { margin-bottom: 0; }
   .project-videos { grid-template-columns: 1fr 1fr; }
 }
 
+.project-videos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .project-videos video {
   width: 100%;
   height: auto;
