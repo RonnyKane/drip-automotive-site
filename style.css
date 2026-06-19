@@ -161,12 +161,14 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ── Header / Navigation ──────────────────────────────────── */
+main, .hero, section { position: relative; z-index: 1; }
+
 #site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
   height: var(--nav-h);
-  background: rgba(13,13,13,0.96);
+  background: rgba(26,26,30,0.96);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -321,6 +323,45 @@ p:last-child { margin-bottom: 0; }
   overflow: hidden;
   background: var(--bg);
 }
+/* ── Paint Drip Backdrop ──────────────────────────────────── */
+.paint-drips {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.paint-drips::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background:
+    /* Red drips */
+    radial-gradient(ellipse 18px 120px at 5% 0%, rgba(212,20,28,0.18) 0%, transparent 100%),
+    radial-gradient(ellipse 12px 200px at 12% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 15px 160px at 22% 0%, rgba(212,20,28,0.15) 0%, transparent 100%),
+    /* Gold drips */
+    radial-gradient(ellipse 14px 180px at 32% 0%, rgba(232,184,16,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 10px 140px at 40% 0%, rgba(232,184,16,0.10) 0%, transparent 100%),
+    /* Pink drips */
+    radial-gradient(ellipse 16px 220px at 50% 0%, rgba(224,0,128,0.10) 0%, transparent 100%),
+    radial-gradient(ellipse 12px 170px at 55% 0%, rgba(224,0,128,0.08) 0%, transparent 100%),
+    /* Orange drips */
+    radial-gradient(ellipse 14px 150px at 65% 0%, rgba(240,144,32,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 18px 190px at 73% 0%, rgba(240,144,32,0.10) 0%, transparent 100%),
+    /* Blue drips */
+    radial-gradient(ellipse 12px 170px at 82% 0%, rgba(0,160,208,0.10) 0%, transparent 100%),
+    radial-gradient(ellipse 16px 130px at 88% 0%, rgba(0,160,208,0.08) 0%, transparent 100%),
+    /* More red drips */
+    radial-gradient(ellipse 14px 200px at 95% 0%, rgba(212,20,28,0.14) 0%, transparent 100%);
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
