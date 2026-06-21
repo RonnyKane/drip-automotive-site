@@ -378,6 +378,23 @@ main, .hero, section { position: relative; z-index: 1; }
   z-index: 1;
   padding: 5rem 0;
 }
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+  }
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .btn-group {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-stats {
+    justify-content: center;
+  }
+}
 /* Hero logo showcase (homepage) */
 .hero-logo-showcase {
   text-align: center;
