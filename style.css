@@ -7,27 +7,27 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:          #1a1a1e;
-  --surface:     #222228;
-  --surface2:    #2a2a32;
-  --surface3:    #343440;
-  --accent:      #d4141c;
-  --accent-dark: #b01018;
-  --accent-glow: rgba(212,20,28,0.15);
-  --gold:        #ffffff;
-  --gold-muted:  #e0dcd8;
-  --trust-blue:  #4a9eff;
-  --text:        #f2f0ed;
-  --text-muted:  #a8a4a0;
-  --text-dim:    #706c68;
-  --border:      #38353a;
-  --white:       #ffffff;
-  --danger:      #e74c3c;
+  --bg:          #0F1117;
+  --surface:     #171B22;
+  --surface2:    #1e222b;
+  --surface3:    #262b35;
+  --accent:      #EF4444;
+  --accent-dark: #dc2626;
+  --accent-glow: rgba(239,68,68,0.15);
+  --gold:        #38BDF8;
+  --gold-muted:  #38BDF8;
+  --trust-blue:  #38BDF8;
+  --text:        #F5F7FA;
+  --text-muted:  #9CA3AF;
+  --text-dim:    #6B7280;
+  --border:      #2a2f3a;
+  --white:       #F5F7FA;
+  --danger:      #EF4444;
   --success:     #2ecc71;
   --radius:      8px;
   --radius-lg:   14px;
   --shadow:      0 4px 24px rgba(0,0,0,0.5);
-  --shadow-accent: 0 0 24px rgba(212,20,28,0.2);
+  --shadow-accent: 0 0 24px rgba(239,68,68,0.25);
   --transition:  0.25s ease;
   --nav-h:       70px;
   --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -167,7 +167,7 @@ main, .hero, section { position: relative; z-index: 1; }
   top: 0; left: 0; right: 0;
   z-index: 1000;
   height: var(--nav-h);
-  background: rgba(26,26,30,0.96);
+  background: rgba(15,17,23,0.96);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -340,17 +340,13 @@ main, .hero, section { position: relative; z-index: 1; }
   right: 0;
   height: 100%;
   background:
-    radial-gradient(ellipse 8px 250px at 3% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
-    radial-gradient(ellipse 6px 180px at 10% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
-    radial-gradient(ellipse 10px 300px at 18% 0%, rgba(212,20,28,0.1) 0%, transparent 100%),
-    radial-gradient(ellipse 7px 220px at 28% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
-    radial-gradient(ellipse 8px 280px at 38% 0%, rgba(212,20,28,0.1) 0%, transparent 100%),
-    radial-gradient(ellipse 6px 200px at 48% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
-    radial-gradient(ellipse 9px 260px at 55% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
-    radial-gradient(ellipse 7px 240px at 65% 0%, rgba(212,20,28,0.1) 0%, transparent 100%),
-    radial-gradient(ellipse 8px 290px at 75% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
-    radial-gradient(ellipse 6px 210px at 85% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
-    radial-gradient(ellipse 10px 270px at 93% 0%, rgba(212,20,28,0.1) 0%, transparent 100%);
+    radial-gradient(ellipse 8px 250px at 3% 0%, rgba(239,68,68,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 180px at 15% 0%, rgba(56,189,248,0.06) 0%, transparent 100%),
+    radial-gradient(ellipse 10px 300px at 30% 0%, rgba(239,68,68,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 7px 220px at 50% 0%, rgba(56,189,248,0.05) 0%, transparent 100%),
+    radial-gradient(ellipse 8px 280px at 70% 0%, rgba(239,68,68,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 200px at 85% 0%, rgba(56,189,248,0.06) 0%, transparent 100%),
+    radial-gradient(ellipse 9px 260px at 97% 0%, rgba(239,68,68,0.08) 0%, transparent 100%);
 }
 
 
@@ -359,16 +355,16 @@ main, .hero, section { position: relative; z-index: 1; }
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(212,20,28,0.06) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 80% at 10% 90%, rgba(212,20,28,0.05) 0%, transparent 60%),
-    linear-gradient(160deg, #18181c 0%, #1a1a1e 50%, #1e1a18 100%);
+    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(239,68,68,0.04) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 80% at 10% 90%, rgba(56,189,248,0.03) 0%, transparent 60%),
+    linear-gradient(160deg, #0F1117 0%, #0F1117 50%, #111520 100%);
 }
 .hero-bg-grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(212,20,28,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(212,20,28,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 .hero-content {
@@ -403,7 +399,7 @@ main, .hero, section { position: relative; z-index: 1; }
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 30px rgba(0, 191, 255, 0.15));
+  filter: drop-shadow(0 4px 30px rgba(56,189,248,0.12));
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -421,9 +417,9 @@ main, .hero, section { position: relative; z-index: 1; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(26,26,30,0.8);
-  border: 1px solid rgba(212,20,28,0.5);
-  color: var(--white);
+  background: rgba(15,17,23,0.8);
+  border: 1px solid rgba(56,189,248,0.4);
+  color: var(--trust-blue);
   padding: 0.4rem 1rem;
   border-radius: 100px;
   font-size: 0.8rem;
@@ -1196,7 +1192,7 @@ main, .hero, section { position: relative; z-index: 1; }
   font-size: 0.8rem;
   color: var(--accent);
   font-weight: 600;
-  border: 1px solid rgba(212,20,28,0.25);
+  border: 1px solid rgba(239,68,68,0.25);
   border-radius: 100px;
   padding: 0.3rem 0.85rem;
   display: inline-block;
@@ -1301,8 +1297,8 @@ main, .hero, section { position: relative; z-index: 1; }
 
 /* ── Alert / Notice ───────────────────────────────────────── */
 .notice {
-  background: rgba(212,20,28,0.07);
-  border: 1px solid rgba(212,20,28,0.2);
+  background: rgba(239,68,68,0.07);
+  border: 1px solid rgba(239,68,68,0.2);
   border-radius: var(--radius);
   padding: 1rem 1.25rem;
   font-size: 0.9rem;
