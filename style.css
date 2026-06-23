@@ -190,17 +190,17 @@ main, .hero, section { position: relative; z-index: 1; }
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 80px;
+  height: 50px;
   width: auto;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
 .nav-logo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 @media (max-width: 768px) {
   .nav-logo-img {
-    height: 60px;
+    height: 42px;
   }
 }
 /* Legacy text logo fallbacks */
