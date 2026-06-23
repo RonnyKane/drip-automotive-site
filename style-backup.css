@@ -13,10 +13,10 @@
   --surface3:    #262b35;
   --accent:      #EF4444;
   --accent-dark: #dc2626;
-  --accent-glow: rgba(239,68,68,0.12);
-  --gold:        #F5F7FA;
-  --gold-muted:  #d1d5db;
-  --trust-blue:  #F5F7FA;
+  --accent-glow: rgba(239,68,68,0.15);
+  --gold:        #38BDF8;
+  --gold-muted:  #38BDF8;
+  --trust-blue:  #38BDF8;
   --text:        #F5F7FA;
   --text-muted:  #9CA3AF;
   --text-dim:    #6B7280;
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--white);
 }
-h1 { font-size: clamp(2rem, 5vw, 3.8rem); }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
 h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); }
 h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); }
 h4 { font-size: 1.15rem; }
@@ -76,7 +76,7 @@ p:last-child { margin-bottom: 0; }
 .section-subtitle { max-width: 640px; color: var(--text-muted); }
 
 /* ── Layout Utilities ─────────────────────────────────────── */
-.container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+.container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
 .section { padding: 5rem 0; }
 .section-alt { background: var(--surface); }
 .section-center { text-align: center; }
@@ -340,11 +340,13 @@ main, .hero, section { position: relative; z-index: 1; }
   right: 0;
   height: 100%;
   background:
-    radial-gradient(ellipse 8px 250px at 5% 0%, rgba(239,68,68,0.06) 0%, transparent 100%),
-    radial-gradient(ellipse 10px 300px at 25% 0%, rgba(239,68,68,0.05) 0%, transparent 100%),
-    radial-gradient(ellipse 8px 280px at 50% 0%, rgba(239,68,68,0.06) 0%, transparent 100%),
-    radial-gradient(ellipse 8px 260px at 75% 0%, rgba(239,68,68,0.05) 0%, transparent 100%),
-    radial-gradient(ellipse 9px 260px at 95% 0%, rgba(239,68,68,0.06) 0%, transparent 100%);
+    radial-gradient(ellipse 8px 250px at 3% 0%, rgba(239,68,68,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 180px at 15% 0%, rgba(56,189,248,0.06) 0%, transparent 100%),
+    radial-gradient(ellipse 10px 300px at 30% 0%, rgba(239,68,68,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 7px 220px at 50% 0%, rgba(56,189,248,0.05) 0%, transparent 100%),
+    radial-gradient(ellipse 8px 280px at 70% 0%, rgba(239,68,68,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 200px at 85% 0%, rgba(56,189,248,0.06) 0%, transparent 100%),
+    radial-gradient(ellipse 9px 260px at 97% 0%, rgba(239,68,68,0.08) 0%, transparent 100%);
 }
 
 
@@ -353,16 +355,16 @@ main, .hero, section { position: relative; z-index: 1; }
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(239,68,68,0.03) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 80% at 10% 90%, rgba(239,68,68,0.02) 0%, transparent 60%),
-    linear-gradient(160deg, #0F1117 0%, #0F1117 50%, #12111a 100%);
+    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(239,68,68,0.04) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 80% at 10% 90%, rgba(56,189,248,0.03) 0%, transparent 60%),
+    linear-gradient(160deg, #0F1117 0%, #0F1117 50%, #111520 100%);
 }
 .hero-bg-grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(239,68,68,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(239,68,68,0.02) 1px, transparent 1px);
+    linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 .hero-content {
@@ -393,7 +395,7 @@ main, .hero, section { position: relative; z-index: 1; }
   margin-bottom: 2rem;
 }
 .hero-logo-img {
-  max-width: 560px;
+  max-width: 480px;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -416,8 +418,8 @@ main, .hero, section { position: relative; z-index: 1; }
   align-items: center;
   gap: 0.5rem;
   background: rgba(15,17,23,0.8);
-  border: 1px solid rgba(239,68,68,0.35);
-  color: var(--white);
+  border: 1px solid rgba(56,189,248,0.4);
+  color: var(--trust-blue);
   padding: 0.4rem 1rem;
   border-radius: 100px;
   font-size: 0.8rem;
@@ -429,9 +431,9 @@ main, .hero, section { position: relative; z-index: 1; }
 .hero h1 { margin-bottom: 1.25rem; }
 .hero h1 .line2 { color: var(--accent); display: block; }
 .hero-desc {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
-  max-width: 660px;
+  max-width: 580px;
   margin-bottom: 2rem;
 }
 .hero-stats {
