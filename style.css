@@ -14,8 +14,9 @@
   --accent:      #d4141c;
   --accent-dark: #b01018;
   --accent-glow: rgba(212,20,28,0.15);
-  --gold:        #e8b810;
-  --gold-muted:  #c9a84c;
+  --gold:        #f0c040;
+  --gold-muted:  #d4a84c;
+  --trust-blue:  #4a9eff;
   --text:        #f2f0ed;
   --text-muted:  #a8a4a0;
   --text-dim:    #706c68;
@@ -377,22 +378,22 @@ main, .hero, section { position: relative; z-index: 1; }
   position: relative;
   z-index: 1;
   padding: 5rem 0;
+  text-align: center;
+}
+.hero-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .btn-group {
+  justify-content: center;
+}
+.hero-stats {
+  justify-content: center;
 }
 @media (max-width: 768px) {
-  .hero-content {
-    text-align: center;
-  }
-  .hero-desc {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .hero .btn-group {
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-  .hero-stats {
-    justify-content: center;
   }
 }
 /* Hero logo showcase (homepage) */
@@ -406,17 +407,16 @@ main, .hero, section { position: relative; z-index: 1; }
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 4px 30px rgba(0, 191, 255, 0.15));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 768px) {
   .hero-logo-img {
     max-width: 320px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
   .hero-logo-showcase {
     margin-bottom: 1.5rem;
-    text-align: center;
   }
 }
 
