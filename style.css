@@ -14,8 +14,8 @@
   --accent:      #d4141c;
   --accent-dark: #b01018;
   --accent-glow: rgba(212,20,28,0.15);
-  --gold:        #f0c040;
-  --gold-muted:  #d4a84c;
+  --gold:        #ffffff;
+  --gold-muted:  #e0dcd8;
   --trust-blue:  #4a9eff;
   --text:        #f2f0ed;
   --text-muted:  #a8a4a0;
@@ -68,7 +68,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--accent);
   margin-bottom: 0.5rem;
   display: block;
 }
@@ -156,10 +156,7 @@ p:last-child { margin-bottom: 0; }
 /* ── Accent / Highlight ───────────────────────────────────── */
 .accent { color: var(--accent); }
 .highlight {
-  background: linear-gradient(135deg, var(--accent) 0%, #0077ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
 }
 
 /* ── Header / Navigation ──────────────────────────────────── */
@@ -343,17 +340,17 @@ main, .hero, section { position: relative; z-index: 1; }
   right: 0;
   height: 100%;
   background:
-    radial-gradient(ellipse 8px 250px at 3% 0%, rgba(212,20,28,0.5) 0%, transparent 100%),
-    radial-gradient(ellipse 6px 180px at 10% 0%, rgba(232,184,16,0.45) 0%, transparent 100%),
-    radial-gradient(ellipse 10px 300px at 18% 0%, rgba(224,0,128,0.4) 0%, transparent 100%),
-    radial-gradient(ellipse 7px 220px at 28% 0%, rgba(240,144,32,0.45) 0%, transparent 100%),
-    radial-gradient(ellipse 8px 280px at 38% 0%, rgba(0,160,208,0.4) 0%, transparent 100%),
-    radial-gradient(ellipse 6px 200px at 48% 0%, rgba(212,20,28,0.45) 0%, transparent 100%),
-    radial-gradient(ellipse 9px 260px at 55% 0%, rgba(232,184,16,0.4) 0%, transparent 100%),
-    radial-gradient(ellipse 7px 240px at 65% 0%, rgba(224,0,128,0.35) 0%, transparent 100%),
-    radial-gradient(ellipse 8px 290px at 75% 0%, rgba(240,144,32,0.4) 0%, transparent 100%),
-    radial-gradient(ellipse 6px 210px at 85% 0%, rgba(0,160,208,0.45) 0%, transparent 100%),
-    radial-gradient(ellipse 10px 270px at 93% 0%, rgba(212,20,28,0.4) 0%, transparent 100%);
+    radial-gradient(ellipse 8px 250px at 3% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 180px at 10% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 10px 300px at 18% 0%, rgba(212,20,28,0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 7px 220px at 28% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 8px 280px at 38% 0%, rgba(212,20,28,0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 200px at 48% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 9px 260px at 55% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 7px 240px at 65% 0%, rgba(212,20,28,0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 8px 290px at 75% 0%, rgba(212,20,28,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 210px at 85% 0%, rgba(212,20,28,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 10px 270px at 93% 0%, rgba(212,20,28,0.1) 0%, transparent 100%);
 }
 
 
@@ -424,9 +421,9 @@ main, .hero, section { position: relative; z-index: 1; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(212,20,28,0.1);
-  border: 1px solid rgba(212,20,28,0.3);
-  color: var(--gold);
+  background: rgba(26,26,30,0.8);
+  border: 1px solid rgba(212,20,28,0.5);
+  color: var(--white);
   padding: 0.4rem 1rem;
   border-radius: 100px;
   font-size: 0.8rem;
