@@ -672,18 +672,18 @@ main, .hero, section { position: relative; z-index: 1; }
   .project-videos { grid-template-columns: 1fr 1fr; }
 }
 
-.project-videos img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
+.project-videos img,
 .project-videos video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+/* If odd number of items, last one spans full width */
+.project-videos > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 /* ── Services Horizontal Scroll ──────────────────────────── */
