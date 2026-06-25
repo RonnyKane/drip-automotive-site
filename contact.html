@@ -42,6 +42,23 @@
     }
   }
   </script>
+<!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "970437355994848");
+    fbq("track", "PageView");
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=970437355994848&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
   <div class="paint-drips" aria-hidden="true"></div>
@@ -276,5 +293,20 @@
   </footer>
   <a href="tel:+13528051818" class="float-cta">📞 Call Now</a>
   <script src="script.js"></script>
+<script>
+    // Meta Pixel - Track form submission as Lead
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', function() {
+          fbq('track', 'Lead');
+        });
+      }
+      // Also track if redirected back after submission
+      if (window.location.search.includes('submitted=true')) {
+        fbq('track', 'Lead');
+      }
+    });
+  </script>
 </body>
 </html>
