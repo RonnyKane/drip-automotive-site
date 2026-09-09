@@ -1,0 +1,19 @@
+# Drip Automotive SEO redirects (Cloudflare Pages / _redirects)
+# Preferred host+path: https://www.dripautomotive.com/<clean>
+# Host apex->www must ALSO be set in Cloudflare Redirect Rules / Bulk Redirects (not expressible reliably here for all hosts).
+
+# Broken duplicate homepage masquerading as dent-removal -> real services hub
+/dent-removal.html    /services    301
+/dent-removal         /services    301
+
+# .html -> clean (platform Pretty URLs may already 308; explicit 301s reinforce for GSC)
+/index.html                 /                   301
+/services.html              /services           301
+/collision-repair.html      /collision-repair   301
+/auto-painting.html         /auto-painting      301
+/insurance-claims.html      /insurance-claims   301
+/restoration.html           /restoration        301
+/gallery.html               /gallery            301
+/about.html                 /about              301
+/contact.html               /contact            301
+/reviews.html               /reviews            301
