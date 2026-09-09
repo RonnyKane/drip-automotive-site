@@ -1,81 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://www.dripautomotive.com/</loc>
-    <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/services.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/collision-repair.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/collision-repair</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/auto-painting.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/auto-painting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/dent-removal.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/insurance-claims</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dripautomotive.com/restoration</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/insurance-claims.html</loc>
-    <lastmod>2025-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.dripautomotive.com/restoration.html</loc>
-    <lastmod>2025-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.dripautomotive.com/gallery.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/gallery</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/about.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/contact.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.dripautomotive.com/reviews.html</loc>
-    <lastmod>2025-04-19</lastmod>
+    <loc>https://www.dripautomotive.com/reviews</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
 </urlset>
